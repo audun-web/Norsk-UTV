@@ -17,11 +17,15 @@ nav {
     padding: 5px;
 }
 
-nav h1 {
+.nav-tittel {
     color: white;
-    text-align: center;
+    text-align: left;
     text-shadow: 2px 4px rgba(0, 0, 0, 0.7);
     font-family: 'Jetbrains Mono', monospace;
+    margin-left: 50px;
+    border-left: 10px solid white;
+    padding-left: 10px
+    
 }
 
 footer {
@@ -50,8 +54,6 @@ footer p {
     color: black;
     text-align: center;
     font-size: 50px;
-    /* Korrekt syntaks for en solid kantlinje */
-    border: 3px solid #FF9B21;
-    /* En "glow"-effekt med samme farge som kantlinjen */
-    box-shadow: 0 0 15px #FF9B21;
+    /* Legger til en "glow"-effekt direkte på teksten */
+    text-shadow: 0 0 10px #FF9B21;
 }
