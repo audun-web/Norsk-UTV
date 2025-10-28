@@ -19,29 +19,5 @@
     <footer>
         <p> &copy; Utviklet av Audun Midtgård Meckelborg - November 2025</p>
     </footer>
-
-    <script>
-        const runawayButton = document.getElementById('runaway-btn');
-
-        if (runawayButton) {
-            runawayButton.addEventListener('mouseover', () => {
-                // Hent vinduets dimensjoner
-                const viewportWidth = window.innerWidth;
-                const viewportHeight = window.innerHeight;
-
-                // Hent knappens dimensjoner
-                const buttonWidth = runawayButton.offsetWidth;
-                const buttonHeight = runawayButton.offsetHeight;
-
-                // Kalkuler en ny tilfeldig posisjon
-                const newTop = Math.random() * (viewportHeight - buttonHeight);
-                const newLeft = Math.random() * (viewportWidth - buttonWidth);
-
-                // Oppdater knappens posisjon
-                runawayButton.style.top = `${newTop}px`;
-                runawayButton.style.left = `${newLeft}px`;
-            });
-        }
-    </script>
 </body>
 </html>

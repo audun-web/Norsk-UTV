@@ -2,6 +2,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    /* Bakgrunnsbilde med et hvitt, halv-gjennomsiktig lag over */
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/akademiet.jpg');
+    background-size: cover; /* Sørger for at bildet dekker hele flaten */
+    background-position: center; /* Sentrerer bildet */
+    background-attachment: fixed; /* Låser bakgrunnen under scrolling */
     margin: 0;
 }
 
@@ -41,19 +47,5 @@ footer p {
     color: black;
     text-align: center;
     font-size: 25px;
-}
-
-#runaway-btn {
-    position: absolute;
-    top: 60%; /* Justerer startposisjon litt ned */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 15px 25px;
-    font-size: 16px;
-    font-family: 'Jetbrains Mono', monospace;
-    cursor: pointer;
-    border: 2px solid #FF9B21;
-    background-color: white;
-    color: #FF9B21;
-    transition: top 0.4s ease-out, left 0.4s ease-out; /* Jevn bevegelse */
+    text-shadow: 2px 4px rgba(100, 100, 100, 0.7);
 }
