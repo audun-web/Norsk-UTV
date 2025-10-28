@@ -40,12 +40,18 @@ footer p {
 /* Sier at body skal fylle hele kjermen, derfor blir footer pushet ned til bunnen av skjermen */
 .content { 
     flex-grow: 1;
+    display: flex;
+    justify-content: center; /* Sentrerer horisontalt */
+    align-items: center;     /* Sentrerer vertikalt */
 }
 
 .tittel {
     font-family: 'Jetbrains Mono', monospace;
     color: black;
     text-align: center;
-    font-size: 25px;
-    text-shadow: 2px 4px rgba(100, 100, 100, 0.7);
+    font-size: 50px;
+    /* Korrekt syntaks for en solid kantlinje */
+    border: 3px solid #FF9B21;
+    /* En "glow"-effekt med samme farge som kantlinjen */
+    box-shadow: 0 0 15px #FF9B21;
 }
