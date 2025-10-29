@@ -101,3 +101,23 @@ footer p {
     font-family: 'Jetbrains Mono', monospace;
     color: black;
 }
+
+/* Styling for innholdet på Om Oss-siden */
+.om-oss-container {
+    max-width: 800px; /* Begrenser bredden for bedre lesbarhet */
+    margin: 40px 20px; /* Gir luft over/under og på sidene */
+    padding: 30px;
+    background-color: #C4C4C4;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+    transition: transform 0.2s ease;
+}
+
+.om-oss-container .info-tekst {
+    text-align: left; /* Bedre for lesbarhet av lengre tekster */
+    line-height: 1.6; /* Øker linjeavstanden */
+}
+
+.om-oss-container:hover {
+    transform: scale(1.05);
+}
