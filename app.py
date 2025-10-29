@@ -20,6 +20,10 @@ def kontact():
     ]
     return render_template('kontakt.html', kontaktliste=kontaktliste)
 
+@app.route('prosjekter') #prosjekt side
+def prosjekt():
+    return render_template('prosjekt.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True) # debug slik at vi ikke må restarte siden for hver endring
