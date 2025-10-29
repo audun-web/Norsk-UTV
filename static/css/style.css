@@ -3,12 +3,16 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    /* Bakgrunnsbilde med et hvitt, halv-gjennomsiktig lag over */
+    background-color: white; /* Standard bakgrunnsfarge for alle sider */
+    margin: 0;
+}
+
+/* Legger kun til bakgrunnsbildet på forsiden */
+#home-page {
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/akademiet.jpg');
     background-size: cover; /* Sørger for at bildet dekker hele flaten */
     background-position: center; /* Sentrerer bildet */
     background-attachment: fixed; /* Låser bakgrunnen under scrolling */
-    margin: 0;
 }
 
 nav {
@@ -72,6 +76,7 @@ footer p {
     display: flex;
     justify-content: center; /* Sentrerer horisontalt */
     align-items: center;     /* Sentrerer vertikalt */
+    flex-direction: column;  /* Stabler elementene vertikalt */
 }
 
 .tittel {
@@ -81,4 +86,18 @@ footer p {
     font-size: 50px;
     /* Legger til en "glow"-effekt direkte på teksten */
     text-shadow: 0 0 10px #FF9B21;
+}
+
+.sidetittel {
+    text-align: center;
+    font-family: 'Jetbrains Mono', monospace;
+    color: black;
+    margin: 20px;
+    
+}
+
+.info-tekst {
+    text-align: center;
+    font-family: 'Jetbrains Mono', monospace;
+    color: black;
 }
