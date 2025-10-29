@@ -1,7 +1,18 @@
 {% extends "base.html" %}
 
 {% block title %}Akademiet VGS Oslo{% endblock %} <!-- Side tittelen som vises på fanen -->
-
 {% block content %}
-
+<div class="kontakt-container">
+    <h2 class="sidetittel">Våre ansatte</h2>
+    <div class="kontakt-grid">
+        {% for kontakt in kontaktliste %}
+        <div class="kontakt-kort">
+            <img src="{{ url_for('static', filename='img/' ~ kontakt.bilde) }}" alt="Bilde av {{ kontakt.navn }}" class="kontakt-bilde">
+            <h3>{{ kontakt.navn }}</h3>
+            <p class="kontakt-fag">{{ kontakt.fag }}</p>
+            <p class="kontakt-tlf">Tlf: {{ kontakt.tlf }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}

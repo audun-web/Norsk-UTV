@@ -165,3 +165,52 @@ footer p {
 .om-oss-container:hover {
     transform: scale(1.05);
 }
+
+/* --- Styling for Kontakt-siden --- */
+
+.kontakt-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto; /* Sentrerer containeren og gir luft over/under */
+}
+
+.kontakt-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolonner med lik bredde */
+    gap: 25px; /* Mellomrom mellom kortene */
+}
+
+.kontakt-kort {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Jetbrains Mono', monospace;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kontakt-kort:hover {
+    transform: translateY(-5px); /* Løfter kortet litt */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.kontakt-bilde {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Gjør bildet sirkulært */
+    object-fit: cover; /* Sørger for at bildet fyller sirkelen uten å strekkes */
+    border: 3px solid #FF9B21;
+    margin-bottom: 15px;
+}
+
+.kontakt-kort h3 {
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+.kontakt-kort p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9em;
+}
