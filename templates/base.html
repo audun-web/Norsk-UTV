@@ -8,7 +8,12 @@
     
     <title>{% block title %}{% endblock %}</title>
 </head>
-<body id="{% block body_id %}{% endblock %}">
+<body id="{% block body_id %}{% endblock %}" class="preload">
+    <!-- Loader som vises mens siden laster -->
+    <div class="loader-container">
+        <div class="loader-text">Loading...</div>
+    </div>
+
     <nav>
         <h1 class="nav-tittel">Akademiet VGS Oslo</h1>
 
@@ -25,5 +30,12 @@
     <footer>
         <p> &copy; Utviklet av Audun Midtgård Meckelborg - November 2025</p>
     </footer>
+
+    <script>
+        // Venter til alt innhold er lastet, fjerner deretter 'preload'-klassen for å starte fade-in-animasjonen.
+        window.addEventListener('load', () => {
+            document.body.classList.remove('preload');
+        });
+    </script>
 </body>
 </html>

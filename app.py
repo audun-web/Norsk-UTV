@@ -12,6 +12,9 @@ def about():
 
 @app.route('/kontakt') #kontakt side
 def contact():
+    kontaktliste = [
+        {"navn": "Kjartan Lang Holmen", "alder": "Hvem vet?", "fag": "God IT mann, er lat IT mann"}
+    ]
     return render_template('kontakt.html')
 
 
